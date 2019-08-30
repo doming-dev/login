@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Darker Grotesque', 'sans-serif';
+    font-weight: 300;
+}

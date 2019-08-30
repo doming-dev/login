@@ -1,0 +1,99 @@
+.light-gray{
+    background: #eee;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 50px;
+}
+
+.logo{
+    background-color:#e5e5e5;
+    width: 100px;
+    height: 50%;
+    margin: 30px;
+}
+
+.row{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    background-color: white;
+}
+
+.login-form{
+    display:flex;
+    flex-direction: column;
+}
+
+.heading{
+    margin-top: 20px;
+}
+
+hr{
+    width: 90%;
+    margin: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.textbox{
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    height: 35px;
+    width: 300px;
+    margin: 20px 20px 0 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.btn-login{
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    font-size: 1rem;
+    width: 300px;
+    height: 30px;
+    margin: 20px;
+}
+
+.btn-login:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+.signup-link{
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    margin-bottom:8px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2f3640;
+}
+
+.reset-password{
+    text-decoration: none;
+    border-bottom: 1px solid gray;
+    margin-bottom:30px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2f3640;
+}
+
+.error-message{
+    background: #ff7979;
+    border: 1px solid #eb4d4b;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    
+}

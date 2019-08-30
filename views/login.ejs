@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="noodles.png" />
+    <title>Login</title>
+</head>
+<body class="light-gray">
+    <div class="flex-container">
+        <img class="logo" src="npmlogo.png" alt="npm logo">
+        <div class="row">
+            <img class="random" src="random.png" alt="random">
+            <h2 class="heading">Login Page</h2>
+            <hr>
+            <% if(error && error.length > 0) { %>
+                <p class="error-message"><%= error %></p>
+            <% } %>
+            <form class="login-form" action="/login" method="POST">
+                <input class="textbox" type="text" name="email" placeholder="Email">
+                <input class="textbox" type="password" name="password" placeholder="Password">
+                <input class="textbox" type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <button class="btn-login" type="submit">Login</button>    
+            </form>
+            <a class="signup-link" href="/signup" >Create Account</a>
+            <a class="reset-password" href="/reset-password" >Forgot Password</a> 
+        </div>
+    </div>
+</body>
+</html>
