@@ -8,9 +8,9 @@ const accountRoutes = require('./routes/account');
 const csrf = require('csurf');
 const MongoDbStore = require('connect-mongodb-session')(session);
 const flash = require('connect-flash');
+const dbconnect = require('./utility/dbconnect');
 
-const MONGODB_URI =
-    'mongodb+srv://domingo-dev:Sefrecasdf12@cluster0-ri0n4.mongodb.net/loginapp?retryWrites=true&w=majority';
+const MONGODB_URI = dbconnect;
 
 const app = express();
 

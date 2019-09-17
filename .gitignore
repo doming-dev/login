@@ -1,3 +1,6 @@
+utility/dbconnect.js
+utility/mailconnect.js
+
 # Logs
 logs
 *.log
